@@ -297,9 +297,10 @@ onOpenModal () {
     } else {
       if (typeof this.props.onOpenModal === 'function') {
         this.props.onOpenModal(() => this.onOpenModal());
+      } else {
+        this.onOpenModal();
       }
     }
-    
   }
 
   _renderIcon() {
