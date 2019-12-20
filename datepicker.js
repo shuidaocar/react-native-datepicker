@@ -405,6 +405,16 @@ onOpenModal () {
                         locale={locale}
                       />
                     </View>
+                    <View
+                      style={[Style.btnText, {width: '100%'}]}
+                    >
+                      <Text
+                          allowFontScaling={allowFontScaling}
+                          style={[Style.btnTextText, {color: '#333'}]}
+                        >
+                        {this.getDateStr(this.state.date)}
+                      </Text>
+                    </View>
                     <TouchableComponent
                       underlayColor={'transparent'}
                       onPress={this.onPressCancel}
